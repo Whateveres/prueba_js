@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Vinculando CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <!-- Vinculando CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <title>Prueba_Alejandra_Tobar</title>
+</head>
+
+
+<body>
+    <!--Primer contenedor -->
+    <div class="contendor1">
+        <hr>
+        <h1>Conversor de Monedas Nacional</h1>
+        <hr>
+
+        <!--Segundo contenedor -->
+        <div class="contenedor2">
+            <h2>Pesos CLP</h2>
+
+            <input type="text" id="monto" placeholder="Ingrese el monto en CLP">
+
+            <p>Moneda a convertir:</p>
+
+            <select name="" id="seleccion">
+                <option value="">Seleccione moneda</option>
+                <option value="usd">USD</option>
+                <option value="euro">EURO</option>
+            </select>
+            
+            <button id="buscar">Buscar</button>
+         
+            <!--Acá va un texto dinámico que camibia a Resultado: $31.21 (cálculo)-->
+            <p id="texto">...</p>
+        </div>
+        <!--Gráfico-->
+        <div>
+            <canvas id="grafico"></canvas>
+        </div>
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
